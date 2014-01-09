@@ -423,7 +423,7 @@
 				ORGANIZATIONNAME = DFRobot;
 				TargetAttributes = {
 					52DDB817180D438600A4196F = {
-						DevelopmentTeam = D8QDJ92CPQ;
+						DevelopmentTeam = 7ALKBE5TF4;
 					};
 					52DDB832180D438600A4196F = {
 						TestTargetID = 52DDB817180D438600A4196F;
@@ -646,7 +646,7 @@
 				INFOPLIST_FILE = "SimpleSample/SimpleSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "2899788B-2F73-4AF4-8865-8C049303ADFF";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -663,7 +663,7 @@
 				INFOPLIST_FILE = "SimpleSample/SimpleSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "2899788B-2F73-4AF4-8865-8C049303ADFF";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
