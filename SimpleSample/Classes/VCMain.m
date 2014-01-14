@@ -8,11 +8,10 @@
 
 #import "VCMain.h"
 #import "BLEUtility.h"
+#import <Foundation/NSRange.h>
 
 #define kMaxLength 88
 #define kMinLength 40
-
-//#define kServiceID @"0000dfb0-0000-1000-8000-00805f9b34fb"
 
 @interface VCMain ()
 {
@@ -452,7 +451,26 @@
     NSString* strText = [NSString stringWithFormat:@"<DISP%@>;",self.txtMessage.text];
     if (_bConnected)
     {
-        [self writeMessage:strText];
+        int nLength = (int)strText.length;
+        int nCount = nLength/18;
+        int nMod = nLength%18;
+        for (int i=0; i<nCount; i++)
+        {
+            NSRange range;
+            range.location = i*18;
+            range.length = 18;
+            NSString* strTemp = [strText substringWithRange:range];
+            [self writeMessage:strTemp];
+        }
+        if (nMod>0)
+        {
+            NSRange range;
+            range.location = nCount*18;
+            range.length = nMod;
+            NSString* strTemp = [strText substringWithRange:range];
+            [self writeMessage:strTemp];
+        }
+        
     }
 }
 
@@ -478,161 +496,6 @@
     
     [self.blunoManager scan];
 }
-//
-//#pragma mark - CBCentralManager delegate
-//
-//-(void)centralManagerDidUpdateState:(CBCentralManager *)central
-//{
-//    if (central.state != CBCentralManagerStatePoweredOn)
-//    {
-//        _bCentralPowerOn = NO;
-//        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"BLE not supported !" message:[NSString stringWithFormat:@"CoreBluetooth return state: %d",(int)central.state] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-//        [alertView show];
-//    }
-//    else
-//    {
-//        _bCentralPowerOn = YES;
-//        
-//        self.imgviewTitle.image = [UIImage imageNamed:@"1_5_connecting.png"];
-//        [self.centralManager scanForPeripheralsWithServices:@[[CBUUID UUIDWithString:kServiceID]] options:nil];
-//    }
-//
-//}
-//
-//-(void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI {
-//    
-//    NSLog(@"Found a BLE Device : %@",peripheral);
-//    peripheral.delegate = self;
-//    [central connectPeripheral:peripheral options:nil];
-//    self.peripheral = peripheral;
-//    
-//}
-//
-//-(void)setConnected
-//{
-//    _bConnected = YES;
-//    self.imgviewTitle.image = [UIImage imageNamed:@"1_5_connected.png"];
-//    self.viewMask.hidden = YES;
-//    
-//}
-//
-//-(void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
-//    [self.centralManager stopScan];
-//    [self.aryMessages removeAllObjects];
-//    [self performSelector:@selector(setConnected) withObject:nil afterDelay:1];
-//    self.bleDevice = [[BLEDevice alloc]init];
-//    self.bleDevice.peripheral = self.peripheral;
-//    self.bleDevice.centralManager = self.centralManager;
-//    self.bleDevice.setupData = [self makeSensorTagConfiguration];
-//
-//    [peripheral discoverServices:@[[CBUUID UUIDWithString:kServiceID]]];
-//    
-//
-//}
-//
-//- (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error
-//{
-//    
-//    [self.centralManager cancelPeripheralConnection:peripheral];
-//    
-//    _bConnected = NO;
-//    self.peripheral = nil;
-//    self.bleDevice = nil;
-//    self.imgviewTitle.image = [UIImage imageNamed:@"1_5_connecting.png"];
-//    self.viewMask.hidden = NO;
-//
-//    [self.centralManager scanForPeripheralsWithServices:@[[CBUUID UUIDWithString:kServiceID]] options:nil];
-//    //[self.centralManager connectPeripheral:self.peripheral options:nil];
-//}
-//
-//#pragma  mark - CBPeripheral delegate
-//-(void) peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error
-//{
-//    NSLog(@"Service count:%lu",(unsigned long)[peripheral.services count]);
-//    for (CBService *s in peripheral.services) [peripheral discoverCharacteristics:nil forService:s];
-//}
-//
-//-(void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(NSError *)error
-//{
-//    
-//    if ([service.UUID isEqual:[CBUUID UUIDWithString
-//                               :[self.bleDevice.setupData
-//                                 valueForKey:@"DF xiaomi service UUID"]]])
-//    {
-//        [self configureSensorTag];
-//    }
-//}
-//
-//
-//-(void)peripheral:(CBPeripheral *)peripheral didUpdateNotificationStateForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
-//    NSLog(@"didUpdateNotificationStateForCharacteristic %@, error = %@",characteristic.UUID, error);
-//    
-//    }
-//
-//-(void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
-//    //NSLog(@"didUpdateValueForCharacteristic = %@",characteristic.value);
-//    
-//    
-//    if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:[self.bleDevice.setupData valueForKey:@"DF xiaomi config UUID"]]])
-//    {
-//        
-//        NSString *strOri = [[NSString alloc] initWithData: characteristic.value encoding:NSUTF8StringEncoding];
-//        NSArray *aryOri = [strOri componentsSeparatedByString:@";"];
-//        //int a = [aryOri count];
-//        if ([aryOri count] <= 1)
-//        {
-//            return;
-//        }
-//        NSString *strFirst = [aryOri objectAtIndex:0];
-//        
-//        NSArray *aryAfter = [strFirst componentsSeparatedByString:@">"];
-//        if ([aryAfter count] <= 1)
-//        {
-//            return;
-//        }
-//        NSString *strSecond = [aryAfter objectAtIndex:0];
-//        if ([strSecond isEqualToString:@"<ROCKER"])
-//        {
-//            
-//            NSString* strNum = [aryAfter objectAtIndex:1];
-//            [self showRocker:strNum];
-//
-//        }
-//        else if ([strSecond isEqualToString:@"<TEMP"])
-//        {
-//            NSString* strTemp = [aryAfter objectAtIndex:1];
-//            [self showTemp:strTemp];
-//        }
-//        else if ([strSecond isEqualToString:@"<HUMID"])
-//        {
-//            NSString* strHum = [aryAfter objectAtIndex:1];
-//            [self showHum:strHum];
-//        }
-//        else if ([strSecond isEqualToString:@"<KNOB"])
-//        {
-//            NSString* strNum = [aryAfter objectAtIndex:1];
-//            [self showPot:strNum];
-//        }
-//    }
-//}
-//
-//-(void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
-//    NSLog(@"didWriteValueForCharacteristic %@ error = %@",characteristic.UUID,error);
-//    NSLog(@"didWriteData %@ ; error = %@",characteristic.value,error);
-//
-//}
-//
-//#pragma mark - SensorTag configuration
-//
-//-(NSMutableDictionary *) makeSensorTagConfiguration {
-//    NSMutableDictionary *d = [[NSMutableDictionary alloc] init];
-// 
-//    [d setValue:@"dfb0"  forKey:@"DF xiaomi service UUID"];
-//    [d setValue:@"dfb1" forKey:@"DF xiaomi data UUID"];
-//    [d setValue:@"dfb1"  forKey:@"DF xiaomi config UUID"];
-//    
-//    return d;
-//}
 
 #pragma mark- DFBlunoDelegate
 

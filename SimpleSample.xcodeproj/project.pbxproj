@@ -11,6 +11,18 @@
 		52AE3A06180E9BAF0043443F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AE3A05180E9BAF0043443F /* CoreBluetooth.framework */; };
 		52AE3A09180EDF3F0043443F /* DrawableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3A08180EDF3F0043443F /* DrawableView.m */; };
 		52CAF7CB1822125A009AC366 /* iphone4 bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52CAF7CA1822125A009AC366 /* iphone4 bg.jpg */; };
+		52CD1AF718851E6C00568730 /* VCMain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CD1AF918851E6C00568730 /* VCMain.xib */; };
+		52CD1B0918851F4A00568730 /* 1_1_JoystickTabSelected_EN.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CD1AFD18851F4A00568730 /* 1_1_JoystickTabSelected_EN.png */; };
+		52CD1B0A18851F4A00568730 /* 1_1_JoystickTabUnSelected_EN.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CD1AFE18851F4A00568730 /* 1_1_JoystickTabUnSelected_EN.png */; };
+		52CD1B0B18851F4A00568730 /* 1_1_LEDTabSelected_EN.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CD1AFF18851F4A00568730 /* 1_1_LEDTabSelected_EN.png */; };
+		52CD1B0C18851F4A00568730 /* 1_1_LEDTabUnSelected_EN.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CD1B0018851F4A00568730 /* 1_1_LEDTabUnSelected_EN.png */; };
+		52CD1B0D18851F4A00568730 /* 1_1_PotentiometerTabSelected_EN.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CD1B0118851F4A00568730 /* 1_1_PotentiometerTabSelected_EN.png */; };
+		52CD1B0E18851F4A00568730 /* 1_1_PotentiometerTabUnSelected_EN.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CD1B0218851F4A00568730 /* 1_1_PotentiometerTabUnSelected_EN.png */; };
+		52CD1B0F18851F4A00568730 /* 2_4_ButtonResetOff_en.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CD1B0418851F4A00568730 /* 2_4_ButtonResetOff_en.png */; };
+		52CD1B1018851F4A00568730 /* 2_4_ButtonResetOn_en.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CD1B0518851F4A00568730 /* 2_4_ButtonResetOn_en.png */; };
+		52CD1B1118851F4A00568730 /* 2_5_ButtonUploadOn_en.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CD1B0618851F4A00568730 /* 2_5_ButtonUploadOn_en.png */; };
+		52CD1B1218851F4A00568730 /* 2_6_ButtonUploadOff_en.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CD1B0718851F4A00568730 /* 2_6_ButtonUploadOff_en.png */; };
+		52CD1B1318851F4A00568730 /* background_en.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CD1B0818851F4A00568730 /* background_en.png */; };
 		52DDB81C180D438600A4196F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DDB81B180D438600A4196F /* Foundation.framework */; };
 		52DDB81E180D438600A4196F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DDB81D180D438600A4196F /* CoreGraphics.framework */; };
 		52DDB820180D438600A4196F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DDB81F180D438600A4196F /* UIKit.framework */; };
@@ -24,7 +36,6 @@
 		52DDB83F180D438600A4196F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52DDB83D180D438600A4196F /* InfoPlist.strings */; };
 		52DDB841180D438600A4196F /* SimpleSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DDB840180D438600A4196F /* SimpleSampleTests.m */; };
 		52DDB84E180D43A800A4196F /* VCMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DDB84C180D43A800A4196F /* VCMain.m */; };
-		52DDB84F180D43A800A4196F /* VCMain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DDB84D180D43A800A4196F /* VCMain.xib */; };
 		52DDB858180D46BF00A4196F /* VCBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DDB856180D46BF00A4196F /* VCBase.m */; };
 		52DDB859180D46BF00A4196F /* VCBase.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DDB857180D46BF00A4196F /* VCBase.xib */; };
 		52DDB866180D4B1800A4196F /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DDB860180D4B1800A4196F /* CustomView.m */; };
@@ -85,6 +96,19 @@
 		52AE3A07180EDF3F0043443F /* DrawableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawableView.h; sourceTree = "<group>"; };
 		52AE3A08180EDF3F0043443F /* DrawableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawableView.m; sourceTree = "<group>"; };
 		52CAF7CA1822125A009AC366 /* iphone4 bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iphone4 bg.jpg"; sourceTree = "<group>"; };
+		52CD1AF818851E6C00568730 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VCMain.xib; sourceTree = "<group>"; };
+		52CD1AFA18851E7500568730 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/VCMain.xib"; sourceTree = "<group>"; };
+		52CD1AFD18851F4A00568730 /* 1_1_JoystickTabSelected_EN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_1_JoystickTabSelected_EN.png; sourceTree = "<group>"; };
+		52CD1AFE18851F4A00568730 /* 1_1_JoystickTabUnSelected_EN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_1_JoystickTabUnSelected_EN.png; sourceTree = "<group>"; };
+		52CD1AFF18851F4A00568730 /* 1_1_LEDTabSelected_EN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_1_LEDTabSelected_EN.png; sourceTree = "<group>"; };
+		52CD1B0018851F4A00568730 /* 1_1_LEDTabUnSelected_EN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_1_LEDTabUnSelected_EN.png; sourceTree = "<group>"; };
+		52CD1B0118851F4A00568730 /* 1_1_PotentiometerTabSelected_EN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_1_PotentiometerTabSelected_EN.png; sourceTree = "<group>"; };
+		52CD1B0218851F4A00568730 /* 1_1_PotentiometerTabUnSelected_EN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_1_PotentiometerTabUnSelected_EN.png; sourceTree = "<group>"; };
+		52CD1B0418851F4A00568730 /* 2_4_ButtonResetOff_en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_4_ButtonResetOff_en.png; sourceTree = "<group>"; };
+		52CD1B0518851F4A00568730 /* 2_4_ButtonResetOn_en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_4_ButtonResetOn_en.png; sourceTree = "<group>"; };
+		52CD1B0618851F4A00568730 /* 2_5_ButtonUploadOn_en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_5_ButtonUploadOn_en.png; sourceTree = "<group>"; };
+		52CD1B0718851F4A00568730 /* 2_6_ButtonUploadOff_en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_6_ButtonUploadOff_en.png; sourceTree = "<group>"; };
+		52CD1B0818851F4A00568730 /* background_en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_en.png; sourceTree = "<group>"; };
 		52DDB818180D438600A4196F /* SimpleSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DDB81B180D438600A4196F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		52DDB81D180D438600A4196F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -103,7 +127,6 @@
 		52DDB840180D438600A4196F /* SimpleSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleSampleTests.m; sourceTree = "<group>"; };
 		52DDB84B180D43A800A4196F /* VCMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCMain.h; sourceTree = "<group>"; };
 		52DDB84C180D43A800A4196F /* VCMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCMain.m; sourceTree = "<group>"; };
-		52DDB84D180D43A800A4196F /* VCMain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCMain.xib; sourceTree = "<group>"; };
 		52DDB855180D46BF00A4196F /* VCBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCBase.h; sourceTree = "<group>"; };
 		52DDB856180D46BF00A4196F /* VCBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCBase.m; sourceTree = "<group>"; };
 		52DDB857180D46BF00A4196F /* VCBase.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCBase.xib; sourceTree = "<group>"; };
@@ -178,6 +201,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52CD1AFB18851F4900568730 /* en */ = {
+			isa = PBXGroup;
+			children = (
+				52CD1AFC18851F4A00568730 /* 1_1_tabs */,
+				52CD1B0318851F4A00568730 /* 2 */,
+				52CD1B0818851F4A00568730 /* background_en.png */,
+			);
+			path = en;
+			sourceTree = "<group>";
+		};
+		52CD1AFC18851F4A00568730 /* 1_1_tabs */ = {
+			isa = PBXGroup;
+			children = (
+				52CD1AFD18851F4A00568730 /* 1_1_JoystickTabSelected_EN.png */,
+				52CD1AFE18851F4A00568730 /* 1_1_JoystickTabUnSelected_EN.png */,
+				52CD1AFF18851F4A00568730 /* 1_1_LEDTabSelected_EN.png */,
+				52CD1B0018851F4A00568730 /* 1_1_LEDTabUnSelected_EN.png */,
+				52CD1B0118851F4A00568730 /* 1_1_PotentiometerTabSelected_EN.png */,
+				52CD1B0218851F4A00568730 /* 1_1_PotentiometerTabUnSelected_EN.png */,
+			);
+			path = 1_1_tabs;
+			sourceTree = "<group>";
+		};
+		52CD1B0318851F4A00568730 /* 2 */ = {
+			isa = PBXGroup;
+			children = (
+				52CD1B0418851F4A00568730 /* 2_4_ButtonResetOff_en.png */,
+				52CD1B0518851F4A00568730 /* 2_4_ButtonResetOn_en.png */,
+				52CD1B0618851F4A00568730 /* 2_5_ButtonUploadOn_en.png */,
+				52CD1B0718851F4A00568730 /* 2_6_ButtonUploadOff_en.png */,
+			);
+			path = 2;
+			sourceTree = "<group>";
+		};
 		52DDB80F180D438600A4196F = {
 			isa = PBXGroup;
 			children = (
@@ -261,7 +318,7 @@
 			children = (
 				52DDB84B180D43A800A4196F /* VCMain.h */,
 				52DDB84C180D43A800A4196F /* VCMain.m */,
-				52DDB84D180D43A800A4196F /* VCMain.xib */,
+				52CD1AF918851E6C00568730 /* VCMain.xib */,
 				52FA0DC2187EA6EB00F8FCCF /* CellDeviceList.xib */,
 			);
 			path = Classes;
@@ -308,6 +365,7 @@
 			children = (
 				52FE146D181F8A4C00D91906 /* 1 */,
 				52FE1488181F8A4C00D91906 /* 2 */,
+				52CD1AFB18851F4900568730 /* en */,
 				52FE1490181F8A4C00D91906 /* background.png */,
 				52CAF7CA1822125A009AC366 /* iphone4 bg.jpg */,
 				52776804182787F9005DA378 /* BLE icon 120X120.png */,
@@ -479,12 +537,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				52FE149F181F8A4C00D91906 /* 1_4_LED.png in Resources */,
+				52CD1B1018851F4A00568730 /* 2_4_ButtonResetOn_en.png in Resources */,
+				52CD1B0D18851F4A00568730 /* 1_1_PotentiometerTabSelected_EN.png in Resources */,
 				52FE1497181F8A4C00D91906 /* 1_2_AllButton.png in Resources */,
 				52FE14B5181FB4AB00D91906 /* 1_4_ring.png in Resources */,
+				52CD1B0E18851F4A00568730 /* 1_1_PotentiometerTabUnSelected_EN.png in Resources */,
+				52CD1B0918851F4A00568730 /* 1_1_JoystickTabSelected_EN.png in Resources */,
 				52FE14A7181F8A4C00D91906 /* 2_2_ButtonOff.png in Resources */,
 				52FE149D181F8A4C00D91906 /* 1_2_Joystick.png in Resources */,
 				52CAF7CB1822125A009AC366 /* iphone4 bg.jpg in Resources */,
 				52FE14A9181F8A4C00D91906 /* 2_4_ButtonResetOff.png in Resources */,
+				52CD1B0A18851F4A00568730 /* 1_1_JoystickTabUnSelected_EN.png in Resources */,
 				52DDB826180D438600A4196F /* InfoPlist.strings in Resources */,
 				52FE1492181F8A4C00D91906 /* 1_1_JoystickTabUnSelected.png in Resources */,
 				52FE1491181F8A4C00D91906 /* 1_1_JoystickTabSelected.png in Resources */,
@@ -496,12 +559,18 @@
 				52FE14A3181F8A4C00D91906 /* 1_5_kong.png in Resources */,
 				52FE14A1181F8A4C00D91906 /* 1_5_connecting.png in Resources */,
 				52FE149C181F8A4C00D91906 /* 1_2_ButtonUp.png in Resources */,
+				52CD1B0C18851F4A00568730 /* 1_1_LEDTabUnSelected_EN.png in Resources */,
 				52FE14A5181F8A4C00D91906 /* 1_5_scanning.png in Resources */,
 				52776805182787F9005DA378 /* BLE icon 120X120.png in Resources */,
 				52FE14B3181FB3CE00D91906 /* 1_4_LED_OFF.png in Resources */,
+				52CD1B0F18851F4A00568730 /* 2_4_ButtonResetOff_en.png in Resources */,
+				52CD1B1118851F4A00568730 /* 2_5_ButtonUploadOn_en.png in Resources */,
 				52FE149E181F8A4C00D91906 /* 1_3_Potentiometer.png in Resources */,
+				52CD1B0B18851F4A00568730 /* 1_1_LEDTabSelected_EN.png in Resources */,
+				52CD1B1318851F4A00568730 /* background_en.png in Resources */,
 				52FE1498181F8A4C00D91906 /* 1_2_ButtonCenter.png in Resources */,
-				52DDB84F180D43A800A4196F /* VCMain.xib in Resources */,
+				52CD1AF718851E6C00568730 /* VCMain.xib in Resources */,
+				52CD1B1218851F4A00568730 /* 2_6_ButtonUploadOff_en.png in Resources */,
 				52FE149A181F8A4C00D91906 /* 1_2_ButtonLeft.png in Resources */,
 				52FE14AC181F8A4C00D91906 /* 2_7_textedit.png in Resources */,
 				52FE14A2181F8A4C00D91906 /* 1_5_disconnected.png in Resources */,
@@ -567,6 +636,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		52CD1AF918851E6C00568730 /* VCMain.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52CD1AF818851E6C00568730 /* en */,
+				52CD1AFA18851E7500568730 /* zh-Hans */,
+			);
+			name = VCMain.xib;
+			sourceTree = "<group>";
+		};
 		52DDB824180D438600A4196F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -665,14 +743,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: chen ye (32J3CB92HH)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Zhiwei Robotics Co Ltd (7ALKBE5TF4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleSample/SimpleSample-Prefix.pch";
 				INFOPLIST_FILE = "SimpleSample/SimpleSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2899788B-2F73-4AF4-8865-8C049303ADFF";
+				PROVISIONING_PROFILE = "BBEB582D-D493-45F9-854C-52A7048B9B42";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -682,14 +760,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: chen ye (32J3CB92HH)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Zhiwei Robotics Co Ltd (7ALKBE5TF4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleSample/SimpleSample-Prefix.pch";
 				INFOPLIST_FILE = "SimpleSample/SimpleSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2899788B-2F73-4AF4-8865-8C049303ADFF";
+				PROVISIONING_PROFILE = "BBEB582D-D493-45F9-854C-52A7048B9B42";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
