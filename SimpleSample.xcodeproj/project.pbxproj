@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		52776805182787F9005DA378 /* BLE icon 120X120.png in Resources */ = {isa = PBXBuildFile; fileRef = 52776804182787F9005DA378 /* BLE icon 120X120.png */; };
-		52AE39FF180E96420043443F /* BLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE39FA180E96420043443F /* BLEDevice.m */; };
-		52AE3A01180E96420043443F /* Sensors.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE39FE180E96420043443F /* Sensors.m */; };
-		52AE3A04180E96700043443F /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3A03180E96700043443F /* BLEUtility.m */; };
 		52AE3A06180E9BAF0043443F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AE3A05180E9BAF0043443F /* CoreBluetooth.framework */; };
 		52AE3A09180EDF3F0043443F /* DrawableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3A08180EDF3F0043443F /* DrawableView.m */; };
 		52CAF7CB1822125A009AC366 /* iphone4 bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52CAF7CA1822125A009AC366 /* iphone4 bg.jpg */; };
@@ -32,6 +29,11 @@
 		52DDB859180D46BF00A4196F /* VCBase.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DDB857180D46BF00A4196F /* VCBase.xib */; };
 		52DDB866180D4B1800A4196F /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DDB860180D4B1800A4196F /* CustomView.m */; };
 		52DDB868180D4B1800A4196F /* Vector2.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DDB864180D4B1800A4196F /* Vector2.m */; };
+		52FA0DBE187E782F00F8FCCF /* BLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FA0DB7187E782F00F8FCCF /* BLEDevice.m */; };
+		52FA0DBF187E782F00F8FCCF /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FA0DB9187E782F00F8FCCF /* BLEUtility.m */; };
+		52FA0DC0187E782F00F8FCCF /* DFBlunoDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FA0DBB187E782F00F8FCCF /* DFBlunoDevice.m */; };
+		52FA0DC1187E782F00F8FCCF /* DFBlunoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FA0DBD187E782F00F8FCCF /* DFBlunoManager.m */; };
+		52FA0DC3187EA6EB00F8FCCF /* CellDeviceList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FA0DC2187EA6EB00F8FCCF /* CellDeviceList.xib */; };
 		52FE1491181F8A4C00D91906 /* 1_1_JoystickTabSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FE146F181F8A4C00D91906 /* 1_1_JoystickTabSelected.png */; };
 		52FE1492181F8A4C00D91906 /* 1_1_JoystickTabUnSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FE1470181F8A4C00D91906 /* 1_1_JoystickTabUnSelected.png */; };
 		52FE1493181F8A4C00D91906 /* 1_1_LEDTabSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FE1471181F8A4C00D91906 /* 1_1_LEDTabSelected.png */; };
@@ -79,12 +81,6 @@
 		52776802182779CD005DA378 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		52776803182779CD005DA378 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		52776804182787F9005DA378 /* BLE icon 120X120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BLE icon 120X120.png"; sourceTree = "<group>"; };
-		52AE39F9180E96420043443F /* BLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDevice.h; sourceTree = "<group>"; };
-		52AE39FA180E96420043443F /* BLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEDevice.m; sourceTree = "<group>"; };
-		52AE39FD180E96420043443F /* Sensors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sensors.h; sourceTree = "<group>"; };
-		52AE39FE180E96420043443F /* Sensors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sensors.m; sourceTree = "<group>"; };
-		52AE3A02180E96700043443F /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
-		52AE3A03180E96700043443F /* BLEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEUtility.m; sourceTree = "<group>"; };
 		52AE3A05180E9BAF0043443F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		52AE3A07180EDF3F0043443F /* DrawableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawableView.h; sourceTree = "<group>"; };
 		52AE3A08180EDF3F0043443F /* DrawableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawableView.m; sourceTree = "<group>"; };
@@ -115,6 +111,15 @@
 		52DDB860180D4B1800A4196F /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		52DDB863180D4B1800A4196F /* Vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2.h; sourceTree = "<group>"; };
 		52DDB864180D4B1800A4196F /* Vector2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vector2.m; sourceTree = "<group>"; };
+		52FA0DB6187E782F00F8FCCF /* BLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDevice.h; sourceTree = "<group>"; };
+		52FA0DB7187E782F00F8FCCF /* BLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEDevice.m; sourceTree = "<group>"; };
+		52FA0DB8187E782F00F8FCCF /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
+		52FA0DB9187E782F00F8FCCF /* BLEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEUtility.m; sourceTree = "<group>"; };
+		52FA0DBA187E782F00F8FCCF /* DFBlunoDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBlunoDevice.h; sourceTree = "<group>"; };
+		52FA0DBB187E782F00F8FCCF /* DFBlunoDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBlunoDevice.m; sourceTree = "<group>"; };
+		52FA0DBC187E782F00F8FCCF /* DFBlunoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBlunoManager.h; sourceTree = "<group>"; };
+		52FA0DBD187E782F00F8FCCF /* DFBlunoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBlunoManager.m; sourceTree = "<group>"; };
+		52FA0DC2187EA6EB00F8FCCF /* CellDeviceList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellDeviceList.xib; sourceTree = "<group>"; };
 		52FE146F181F8A4C00D91906 /* 1_1_JoystickTabSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_1_JoystickTabSelected.png; sourceTree = "<group>"; };
 		52FE1470181F8A4C00D91906 /* 1_1_JoystickTabUnSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_1_JoystickTabUnSelected.png; sourceTree = "<group>"; };
 		52FE1471181F8A4C00D91906 /* 1_1_LEDTabSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_1_LEDTabSelected.png; sourceTree = "<group>"; };
@@ -209,6 +214,7 @@
 			children = (
 				52FE146C181F8A4C00D91906 /* Resources */,
 				52DDB85C180D4B1800A4196F /* Utility */,
+				52FA0DB4187E782F00F8FCCF /* Bluno */,
 				52DDB84A180D43A800A4196F /* Classes */,
 				52DDB82A180D438600A4196F /* AppDelegate.h */,
 				52DDB82B180D438600A4196F /* AppDelegate.m */,
@@ -253,13 +259,10 @@
 		52DDB84A180D43A800A4196F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				52AE39F9180E96420043443F /* BLEDevice.h */,
-				52AE39FA180E96420043443F /* BLEDevice.m */,
-				52AE39FD180E96420043443F /* Sensors.h */,
-				52AE39FE180E96420043443F /* Sensors.m */,
 				52DDB84B180D43A800A4196F /* VCMain.h */,
 				52DDB84C180D43A800A4196F /* VCMain.m */,
 				52DDB84D180D43A800A4196F /* VCMain.xib */,
+				52FA0DC2187EA6EB00F8FCCF /* CellDeviceList.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -271,12 +274,33 @@
 				52DDB860180D4B1800A4196F /* CustomView.m */,
 				52DDB863180D4B1800A4196F /* Vector2.h */,
 				52DDB864180D4B1800A4196F /* Vector2.m */,
-				52AE3A02180E96700043443F /* BLEUtility.h */,
-				52AE3A03180E96700043443F /* BLEUtility.m */,
 				52AE3A07180EDF3F0043443F /* DrawableView.h */,
 				52AE3A08180EDF3F0043443F /* DrawableView.m */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		52FA0DB4187E782F00F8FCCF /* Bluno */ = {
+			isa = PBXGroup;
+			children = (
+				52FA0DB5187E782F00F8FCCF /* Core */,
+				52FA0DBA187E782F00F8FCCF /* DFBlunoDevice.h */,
+				52FA0DBB187E782F00F8FCCF /* DFBlunoDevice.m */,
+				52FA0DBC187E782F00F8FCCF /* DFBlunoManager.h */,
+				52FA0DBD187E782F00F8FCCF /* DFBlunoManager.m */,
+			);
+			path = Bluno;
+			sourceTree = "<group>";
+		};
+		52FA0DB5187E782F00F8FCCF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				52FA0DB6187E782F00F8FCCF /* BLEDevice.h */,
+				52FA0DB7187E782F00F8FCCF /* BLEDevice.m */,
+				52FA0DB8187E782F00F8FCCF /* BLEUtility.h */,
+				52FA0DB9187E782F00F8FCCF /* BLEUtility.m */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		52FE146C181F8A4C00D91906 /* Resources */ = {
@@ -481,6 +505,7 @@
 				52FE149A181F8A4C00D91906 /* 1_2_ButtonLeft.png in Resources */,
 				52FE14AC181F8A4C00D91906 /* 2_7_textedit.png in Resources */,
 				52FE14A2181F8A4C00D91906 /* 1_5_disconnected.png in Resources */,
+				52FA0DC3187EA6EB00F8FCCF /* CellDeviceList.xib in Resources */,
 				52FE1496181F8A4C00D91906 /* 1_1_PotentiometerTabUnSelected.png in Resources */,
 				52DDB82E180D438600A4196F /* Images.xcassets in Resources */,
 				52FE14AA181F8A4C00D91906 /* 2_5_ButtonUploadOn.png in Resources */,
@@ -509,16 +534,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52AE3A04180E96700043443F /* BLEUtility.m in Sources */,
 				52DDB84E180D43A800A4196F /* VCMain.m in Sources */,
-				52AE39FF180E96420043443F /* BLEDevice.m in Sources */,
 				52DDB868180D4B1800A4196F /* Vector2.m in Sources */,
+				52FA0DC1187E782F00F8FCCF /* DFBlunoManager.m in Sources */,
 				52AE3A09180EDF3F0043443F /* DrawableView.m in Sources */,
+				52FA0DC0187E782F00F8FCCF /* DFBlunoDevice.m in Sources */,
+				52FA0DBE187E782F00F8FCCF /* BLEDevice.m in Sources */,
+				52FA0DBF187E782F00F8FCCF /* BLEUtility.m in Sources */,
 				52DDB82C180D438600A4196F /* AppDelegate.m in Sources */,
 				52DDB828180D438600A4196F /* main.m in Sources */,
 				52DDB858180D46BF00A4196F /* VCBase.m in Sources */,
 				52DDB866180D4B1800A4196F /* CustomView.m in Sources */,
-				52AE3A01180E96420043443F /* Sensors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

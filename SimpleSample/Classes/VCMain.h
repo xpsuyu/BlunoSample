@@ -11,6 +11,8 @@
 #import "BLEDevice.h"
 #import "CustomView.h"
 #import "Vector2.h"
+#import "DFBlunoDevice.h"
+#import "DFBlunoManager.h"
 
 enum TabState
 {
@@ -19,7 +21,7 @@ enum TabState
     POT
 };
 
-@interface VCMain : UIViewController<CBCentralManagerDelegate,CBPeripheralDelegate,CustomViewDelegate>
+@interface VCMain : UIViewController<UITableViewDelegate,CustomViewDelegate,DFBlunoDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btnLed;
 @property (weak, nonatomic) IBOutlet UIButton *btnPot;
 @property (weak, nonatomic) IBOutlet UIButton *btnJoy;
@@ -29,10 +31,14 @@ enum TabState
 @property (weak, nonatomic) IBOutlet UILabel *lbTemp;
 @property (weak, nonatomic) IBOutlet UILabel *lbHum;
 
-@property (strong,nonatomic) CBCentralManager* centralManager;
+//@property (strong,nonatomic) CBCentralManager* centralManager;
 //@property (strong,nonatomic) CBPeripheral*     device;
-@property (strong,nonatomic) CBPeripheral*     peripheral;
-@property (strong,nonatomic) BLEDevice*        bleDevice;
+//@property (strong,nonatomic) CBPeripheral*     peripheral;
+//@property (strong,nonatomic) BLEDevice*        bleDevice;
+
+@property(strong, nonatomic) DFBlunoManager* blunoManager;
+@property(strong, nonatomic) DFBlunoDevice*  blunoDev;
+@property(strong, nonatomic) NSMutableArray* aryDevices;
 
 @property (nonatomic, strong) Vector2* stickCenterPoint;
 @property (nonatomic, strong) Vector2* currentStickPoint;
@@ -50,6 +56,11 @@ enum TabState
 @property (weak, nonatomic) IBOutlet UIView *viewMainFrame;
 @property (weak, nonatomic) IBOutlet UIView *viewMask;
 
+@property (strong, nonatomic) IBOutlet UIView *viewDevices;
+@property (weak, nonatomic) IBOutlet UITableView *tbDevices;
+@property (weak, nonatomic) IBOutlet UILabel *lbConnState;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *SearchIndicator;
+@property (strong, nonatomic) IBOutlet UITableViewCell *cellDevices;
 
 - (IBAction)actionLed:(id)sender;
 - (IBAction)actionJoy:(id)sender;
@@ -59,7 +70,10 @@ enum TabState
 - (IBAction)actionComplete:(id)sender;
 - (IBAction)actionSubmit:(id)sender;
 - (IBAction)actionClear:(id)sender;
+- (IBAction)actionReturn:(id)sender;
+- (IBAction)actionSearch:(id)sender;
 
--(NSMutableDictionary *) makeSensorTagConfiguration;
+
+//-(NSMutableDictionary *) makeSensorTagConfiguration;
 
 @end

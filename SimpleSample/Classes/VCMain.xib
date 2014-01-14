@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VCMain">
             <connections>
+                <outlet property="SearchIndicator" destination="or8-YU-lD5" id="h3I-Uo-PhU"/>
                 <outlet property="btnClear" destination="1nM-sr-sdz" id="vHV-PL-PzA"/>
                 <outlet property="btnComplete" destination="L1W-Yg-oLI" id="VBd-Wk-n6R"/>
                 <outlet property="btnJoy" destination="rah-Nw-H1Q" id="D45-Gt-kAQ"/>
@@ -19,8 +20,10 @@
                 <outlet property="imgviewTitle" destination="tf8-dw-XGk" id="rBE-z0-Eg8"/>
                 <outlet property="lbHum" destination="0Ct-3i-4Jv" id="jOv-uB-9LL"/>
                 <outlet property="lbTemp" destination="oDy-8S-vlA" id="8Sy-hK-zTO"/>
+                <outlet property="tbDevices" destination="b0c-q1-Q52" id="inb-pt-QYt"/>
                 <outlet property="txtMessage" destination="rdt-WT-yS9" id="jWK-5X-qpH"/>
                 <outlet property="view" destination="sA3-1N-It3" id="QcG-8Z-U2f"/>
+                <outlet property="viewDevices" destination="qbU-9a-VDq" id="CfJ-cM-NsV"/>
                 <outlet property="viewJoy" destination="f98-3M-gID" id="mEi-GU-TV0"/>
                 <outlet property="viewLed" destination="4NW-aj-Sab" id="rJh-yI-aeg"/>
                 <outlet property="viewMainFrame" destination="1" id="hTg-KW-Gh6"/>
@@ -209,6 +212,16 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zUq-Vt-o5L">
+                            <rect key="frame" x="240" y="0.0" width="79" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Search">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="actionSearch:" destination="-1" eventType="touchUpInside" id="Ku3-AA-cuj"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                     <gestureRecognizers/>
@@ -223,6 +236,47 @@
                         <action selector="actionComplete:" destination="-1" eventType="touchUpInside" id="IUi-QL-enc"/>
                     </connections>
                 </button>
+                <view hidden="YES" contentMode="scaleToFill" id="qbU-9a-VDq">
+                    <rect key="frame" x="0.0" y="30" width="320" height="538"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="82" sectionHeaderHeight="22" sectionFooterHeight="22" id="b0c-q1-Q52">
+                            <rect key="frame" x="0.0" y="56" width="320" height="482"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="separatorColor" red="0.23529411764705882" green="0.70980392156862748" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                            <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="1oH-MI-uQP"/>
+                                <outlet property="delegate" destination="-1" id="f4I-FS-Wjm"/>
+                            </connections>
+                        </tableView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device List" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PEK-ch-b8l">
+                            <rect key="frame" x="8" y="20" width="98" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.23529411759999999" green="0.70980392160000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="or8-YU-lD5">
+                            <rect key="frame" x="106" y="24" width="20" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WfO-w7-e6Z">
+                            <rect key="frame" x="254" y="19" width="46" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Return">
+                                <color key="titleColor" red="0.23529411759999999" green="0.70980392160000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="actionReturn:" destination="-1" eventType="touchUpInside" id="s46-C6-DW8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
