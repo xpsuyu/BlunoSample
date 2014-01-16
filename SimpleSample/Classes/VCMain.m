@@ -477,7 +477,7 @@
 - (IBAction)actionClear:(id)sender
 {
     self.txtMessage.text = @"";
-
+    [self writeMessage:@"<DISP>;"];
 }
 
 - (IBAction)actionReturn:(id)sender

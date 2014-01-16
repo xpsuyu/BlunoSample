@@ -231,7 +231,7 @@
                     <rect key="frame" x="228" y="527" width="92" height="41"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="完成"/>
+                    <state key="normal" title="OK"/>
                     <connections>
                         <action selector="actionComplete:" destination="-1" eventType="touchUpInside" id="IUi-QL-enc"/>
                     </connections>
